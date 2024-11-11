@@ -1,0 +1,112 @@
+:root{
+    --cor-texto: white;
+    --primary-color: purple;
+    --font-family: "Platypi", serif;
+    --fonte-titulo:"Lora", serif;
+    --tam-raio-borda: 10px;
+    --tam-raio-borda-botoes: 8px;
+}
+
+h1{
+    font-family: var(--fonte-titulo);
+    text-align:center;
+    color:var(--cor-texto);
+}
+
+h2{
+    font-family: var(--fonte-titulo);
+    color:black;
+    text-align:center;
+
+}
+
+p{
+    text-align:center;
+    font-size: 1.2rem;
+}
+
+header {
+   background-color: rgb(79, 79, 238);
+   padding: 1rem;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: plum;
+    background: url("https://i.pinimg.com/564x/d8/42/9e/d8429e36005aa2ef65499e62b783db02.jpg");
+    color:var(--cor-texto);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+}
+
+ footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(79, 79, 236);
+    color: black;
+    text-align: center;
+    padding: 5px;
+ }
+
+/* configurações pata o formulário */
+form{
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"],
+input[type="email"],
+textarea{
+    width:100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #add;
+    border-radius: 4px;
+    box-sizing:border-box;
+}
+
+nav ul {
+   list-style: none;
+   padding: 0;
+   display: flex;
+   justify-content: center;
+}
+
+.button{
+    text-align: center;
+}
+
+figure{
+    display:inline-block;
+    text-align: center;
+    margin: 15px;
+    display: grid;
+    margin: 30px 10px;
+}
+
+nav ul li {
+   margin: 0 1rem;
+}
+
+nav ul li a {
+   color: white;
+   text-decoration: none;
+}
+
+@media (max-width: 600px) {
+   nav ul{
+   flex-direction: column;
+    text-align: center; 
+   }
+}
